@@ -13,3 +13,13 @@
 
 # SpringDB 2
 김영한님의 스프링 DB 2편 강의 학습 내용 정리 및 기록
+
+## 22.05.30
+- JdbcTemplate : 순서 기반 파라미터 바인딩 지원
+ - KeyHolder를 사용해 DB PK ID값을 확인
+  
+- NamedParameterJdbcTemplate : 이름 기반 파라미터 바인딩을 지원
+ - '?' 대신 ':파라미터이름 을 사용'
+ - Map, MapSqlParameterSource, BeanPropertySqlParameterSource 등 다양한 방법으로 파라미터 객체 생성 가능
+ 
+- SimpleJdbcInsert : INSERT SQL을 편리하게 사용 가능
