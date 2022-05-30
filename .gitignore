@@ -33,3 +33,16 @@ jdbc/gradlew
 jdbc/gradlew.bat
 jdbc/HELP.md
 jdbc/settings.gradle
+
+# itemservice-db 프로젝트 설정파일
+itemservice-db/.gradle
+itemservice-db/.idea
+itemservice-db/build
+itemservice-db/gradle
+itemservice-db/out
+itemservice-db/.gitignore
+itemservice-db/gradlew
+itemservice-db/gradlew.bat
+itemservice-db/HELP.md
+itemservice-db/settings.gradle
+
