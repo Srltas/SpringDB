@@ -1,9 +1,9 @@
-package hello.itemservice.service.repository.memory;
+package hello.itemservice.repository.memory;
 
 import hello.itemservice.domain.Item;
-import hello.itemservice.service.repository.ItemRepository;
-import hello.itemservice.service.repository.ItemSearchCond;
-import hello.itemservice.service.repository.ItemUpdateDto;
+import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.repository.ItemSearchCond;
+import hello.itemservice.repository.ItemUpdateDto;
 import org.springframework.stereotype.Repository;
 import org.springframework.util.ObjectUtils;
 

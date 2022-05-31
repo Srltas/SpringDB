@@ -1,8 +1,8 @@
 package hello.itemservice.service;
 
 import hello.itemservice.domain.Item;
-import hello.itemservice.service.repository.ItemSearchCond;
-import hello.itemservice.service.repository.ItemUpdateDto;
+import hello.itemservice.repository.ItemSearchCond;
+import hello.itemservice.repository.ItemUpdateDto;
 
 import java.util.List;
 import java.util.Optional;

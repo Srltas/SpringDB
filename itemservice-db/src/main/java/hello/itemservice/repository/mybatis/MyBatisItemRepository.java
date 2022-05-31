@@ -1,38 +1,39 @@
-package hello.itemservice.service;
+package hello.itemservice.repository.mybatis;
 
 import hello.itemservice.domain.Item;
 import hello.itemservice.repository.ItemRepository;
 import hello.itemservice.repository.ItemSearchCond;
 import hello.itemservice.repository.ItemUpdateDto;
 import lombok.RequiredArgsConstructor;
-import org.springframework.stereotype.Service;
+import org.springframework.stereotype.Repository;
 
 import java.util.List;
 import java.util.Optional;
 
-@Service
+@Repository
 @RequiredArgsConstructor
-public class ItemServiceV1 implements ItemService {
+public class MyBatisItemRepository implements ItemRepository {
 
-    private final ItemRepository itemRepository;
+    private final ItemMapper itemMapper;
 
     @Override
     public Item save(Item item) {
-        return itemRepository.save(item);
+        itemMapper.save(item);
+        return item;
     }
 
     @Override
     public void update(Long itemId, ItemUpdateDto updateParam) {
-        itemRepository.update(itemId, updateParam);
+        itemMapper.update(itemId, updateParam);
     }
 
     @Override
     public Optional<Item> findById(Long id) {
-        return itemRepository.findById(id);
+        return itemMapper.findById(id);
     }
 
     @Override
-    public List<Item> findItems(ItemSearchCond cond) {
-        return itemRepository.findAll(cond);
+    public List<Item> findAll(ItemSearchCond cond) {
+        return itemMapper.findAll(cond);
     }
 }

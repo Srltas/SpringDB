@@ -1,8 +1,8 @@
 package hello.itemservice.web;
 
 import hello.itemservice.domain.Item;
-import hello.itemservice.service.repository.ItemSearchCond;
-import hello.itemservice.service.repository.ItemUpdateDto;
+import hello.itemservice.repository.ItemSearchCond;
+import hello.itemservice.repository.ItemUpdateDto;
 import hello.itemservice.service.ItemService;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;

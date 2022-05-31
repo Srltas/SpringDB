@@ -1,7 +1,7 @@
 package hello.itemservice;
 
 import hello.itemservice.domain.Item;
-import hello.itemservice.service.repository.ItemRepository;
+import hello.itemservice.repository.ItemRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.context.event.ApplicationReadyEvent;

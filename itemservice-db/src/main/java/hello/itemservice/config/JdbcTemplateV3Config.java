@@ -2,9 +2,8 @@ package hello.itemservice.config;
 
 import hello.itemservice.service.ItemService;
 import hello.itemservice.service.ItemServiceV1;
-import hello.itemservice.service.repository.ItemRepository;
-import hello.itemservice.service.repository.jdbctemplate.JdbcTemplateItemRepositoryV2;
-import hello.itemservice.service.repository.jdbctemplate.JdbcTemplateItemRepositoryV3;
+import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.repository.jdbctemplate.JdbcTemplateItemRepositoryV3;
 import lombok.RequiredArgsConstructor;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

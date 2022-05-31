@@ -1,9 +1,9 @@
-package hello.itemservice.service.repository.jdbctemplate;
+package hello.itemservice.repository.jdbctemplate;
 
 import hello.itemservice.domain.Item;
-import hello.itemservice.service.repository.ItemRepository;
-import hello.itemservice.service.repository.ItemSearchCond;
-import hello.itemservice.service.repository.ItemUpdateDto;
+import hello.itemservice.repository.ItemRepository;
+import hello.itemservice.repository.ItemSearchCond;
+import hello.itemservice.repository.ItemUpdateDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.jdbc.core.BeanPropertyRowMapper;
