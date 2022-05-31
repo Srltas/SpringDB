@@ -23,3 +23,18 @@
   - Map, MapSqlParameterSource, BeanPropertySqlParameterSource 등 다양한 방법으로 파라미터 객체 생성 가능
  
 * SimpleJdbcInsert : INSERT SQL을 편리하게 사용 가능
+
+## 22.05.31
+* 데이터베이스를 연동하여 테스트 케이스 작성
+  - @Transactional을 활용해 테스트 케이스가 다른 테스트 케이스와 격리되고, 반복해서 실행할 수 있게 만듦
+  - 임베디드 모드 DB로 JVM 안에서 메모리 모드로 동작하게 만들어 DB 연결이 안되어 있어도 테스트를 할 수 있게 설정
+  
+* MyBatis 적용
+  - 매핑 XML, 매퍼 인터페이스를 만들어 JAVA코드와 SQL 매핑
+  - MyBatis의 장점인 동적 쿼리를 만들어 사용
+  - MyBatis 스프링 연동 모듈에서 매퍼 인터페이스에 대한 구현체를 동적 프록시로 생성함
+
+* JPA 적용
+  - @Entity, @Id, @GeneratedValue, @Column 등 어노테이션을 이용해 엔티티를 만들어 JPA 적용
+  - JPQL(객체지향 쿼리 언어) 학습
+  - @Repository이 붙어 있는 클래스는 예외 변환 AOP의 적용 대상이 되어 JPA 예외를 Spring 예외로 추상화 시켜줌
