@@ -45,4 +45,18 @@ itemservice-db/gradlew
 itemservice-db/gradlew.bat
 itemservice-db/HELP.md
 itemservice-db/settings.gradle
+itemservice-db/src/main/generated/hello/itemservice/domain
+
+# springtx 프로젝트 설정파일
+springtx/.gradle
+springtx/.idea
+springtx/build
+springtx/gradle
+springtx/out
+springtx/.gitignore
+springtx/gradlew
+springtx/gradlew.bat
+springtx/HELP.md
+springtx/settings.gradle
+springtx/src/main/generated
 
